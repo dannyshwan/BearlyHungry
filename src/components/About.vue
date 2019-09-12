@@ -5,7 +5,7 @@
         </div>
         <div id='about'>
             <div id='about_me'>
-                <p>Hey there, I'm Sara ✌️! I think cooking is really cool and I like bears</p>
+                <p>Hey there, I'm Sara ✌️! I think cooking is really cool and I like bears (To be updated)</p>
             </div>
             <div id='contact'> 
                 <h3 style="font-size: 45px; font-family: 'Fredericka the Great', sans-serif"> WANNA COLLAB? <hr style="width: 250px; margin:auto;"></h3>
@@ -62,6 +62,7 @@ export default {
     background-color: rgba(240, 198, 31, 0.5);
     border-radius: 20px;
     font-size: 20px;
+    margin-bottom: 5px;
 }
 
 #contact{
@@ -69,6 +70,7 @@ export default {
     border-radius: 20px;
     font-size: 20px;
     width: 100%;
+    margin-top: 5px;
 }
 
 .links{

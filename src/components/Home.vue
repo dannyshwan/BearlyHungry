@@ -33,7 +33,7 @@ export default {
 
 #welcoming{
     font-size: 2em;
-    transform: translateX(-115%) translateY(100%);
+    transform: translateX(-115%) translateY(115%);
 }
 </style>
 

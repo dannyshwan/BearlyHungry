@@ -1,6 +1,5 @@
 <template>
 	<div id="app">
-		
 		<b-navbar id='navbar' class='navbar navbar-default navbar-custom' variant="faded" type='dark'>
 			<b-navbar-brand id='brand' href="#home">Bearly Hungry</b-navbar-brand>
 			<b-nav-collapse class='ml-auto'>
