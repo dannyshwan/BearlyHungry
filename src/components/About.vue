@@ -11,7 +11,7 @@
                 <h3 style="font-size: 45px; font-family: 'Fredericka the Great', sans-serif"> WANNA COLLAB? <hr style="width: 250px; margin:auto;"></h3>
                 <div style="padding: 0 0 5%">
                     <a class="links" href="https://www.instagram.com/bearly_hungry/">INSTAGRAM</a>
-                    <a class="links" href="">EMAIL</a>
+                    <a class="links" href="mailto:bearlyhungry@gmail.com">EMAIL</a>
                 </div>
             </div>
         </div>
@@ -62,7 +62,7 @@ export default {
     background-color: rgba(240, 198, 31, 0.5);
     border-radius: 20px;
     font-size: 20px;
-    margin-bottom: 5px;
+    margin-bottom: 15px;
 }
 
 #contact{
@@ -70,7 +70,7 @@ export default {
     border-radius: 20px;
     font-size: 20px;
     width: 100%;
-    margin-top: 5px;
+    margin-top: 15px;
 }
 
 .links{
