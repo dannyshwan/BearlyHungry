@@ -1,8 +1,6 @@
 <template>
     <section id='about_section'>
-        <div id='sara'>
-            <img src='../assets/sara.jpg'>
-        </div>
+        <img id='sara' src='../assets/sara.jpg'>
         <div id='about'>
             <div id='about_me'>
                 <p>Hey there, I'm Sara ✌️! I think cooking is really cool and I like bears (To be updated)</p>
@@ -26,7 +24,7 @@ export default {
 
 <style>
 #about_section{
-    display: flex;
+    display: inline-flex;
     width: 100%;
     justify-content: center;
     align-items: center;
@@ -34,18 +32,15 @@ export default {
 }
 
 #sara{
-    height: 75%;
+    height: auto;
+    width: 22.5%;
     margin-right: 5%;
-}
-
-#sara img{
-    height: 100%;
     box-shadow: 15px 15px 0 rgb(242, 118, 126);
     transition: 0.3s;
     border-radius: 5%;
 }
 
-#sara img:hover{
+#sara:hover{
     box-shadow: 5px 5px 0 rgb(242, 118, 126); 
 }
 
