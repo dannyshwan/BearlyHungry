@@ -6,7 +6,7 @@
                 <p>Hey there, I'm Sara ✌️! I think cooking is really cool and I like bears (To be updated)</p>
             </div>
             <div id='contact'> 
-                <h3 style="font-size: 225%; font-family: 'Fredericka the Great', sans-serif"> WANNA COLLAB? <hr style="width: 50%; margin:auto;"></h3>
+                <h3 style="font-size: 3vw; font-family: 'Fredericka the Great', sans-serif"> WANNA COLLAB? <hr style="width: 50%; margin:auto;"></h3>
                 <div style="padding: 0 0 5%">
                     <a class="links" href="https://www.instagram.com/bearly_hungry/">INSTAGRAM</a>
                     <a class="links" href="mailto:bearlyhungry@gmail.com">EMAIL</a>
@@ -35,13 +35,13 @@ export default {
     height: auto;
     width: 22.5%;
     margin-right: 5%;
-    box-shadow: 15px 15px 0 rgb(242, 118, 126);
+    box-shadow: 0.85vw 0.85vw 0 rgb(242, 118, 126);
     transition: 0.3s;
     border-radius: 5%;
 }
 
 #sara:hover{
-    box-shadow: 5px 5px 0 rgb(242, 118, 126); 
+    box-shadow: 0.5vw 0.5vw 0 rgb(242, 118, 126); 
 }
 
 #about{

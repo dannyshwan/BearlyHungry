@@ -93,7 +93,7 @@ export default {
 	}
 
 	#brand{
-		font-size: 1.75em;
+		font-size: 1.75vw;
 		margin:0 2.5%;
 		position: relative;
 	}
@@ -119,7 +119,7 @@ export default {
 		opacity: 0.5;
 		margin: 0 50px;
 		border: 0 10% solid;
-		font-size: 1.5em;
+		font-size: 1.5vw;
 		transition-duration: 0.3s;
 	}
 
