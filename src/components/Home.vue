@@ -1,7 +1,7 @@
 <template >
     <section id='home'>
         <div id='home_layer'>
-            <h1 id='welcoming'>Hello!</h1>
+            <p id='welcoming'>Hello!</p>
             <p>Welcome to Bearly Hungry! <img src='../assets/eating_pooh.png'></p>
         </div>
     </section>
@@ -26,14 +26,14 @@ export default {
     display: flex;
     font-size: 5em;
     justify-content: center;
-    align-items: center;
+    align-items: left;
     flex-flow: column;
     height: 100%;
 }
 
 #welcoming{
     font-size: 2em;
-    transform: translateX(-115%) translateY(115%);
+    margin-bottom: -15%;
 }
 </style>
 

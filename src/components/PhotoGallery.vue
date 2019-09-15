@@ -60,6 +60,6 @@ export default {
     display: block;
     object-fit: cover;
     height: 59em;
-    width: 75%;
+    width: 100%;
 }
 </style>

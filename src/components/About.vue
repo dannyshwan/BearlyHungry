@@ -8,7 +8,7 @@
                 <p>Hey there, I'm Sara ✌️! I think cooking is really cool and I like bears (To be updated)</p>
             </div>
             <div id='contact'> 
-                <h3 style="font-size: 45px; font-family: 'Fredericka the Great', sans-serif"> WANNA COLLAB? <hr style="width: 250px; margin:auto;"></h3>
+                <h3 style="font-size: 225%; font-family: 'Fredericka the Great', sans-serif"> WANNA COLLAB? <hr style="width: 50%; margin:auto;"></h3>
                 <div style="padding: 0 0 5%">
                     <a class="links" href="https://www.instagram.com/bearly_hungry/">INSTAGRAM</a>
                     <a class="links" href="mailto:bearlyhungry@gmail.com">EMAIL</a>
@@ -61,21 +61,21 @@ export default {
 #about_me{
     background-color: rgba(240, 198, 31, 0.5);
     border-radius: 20px;
-    font-size: 20px;
-    margin-bottom: 15px;
+    font-size: 120%;
+    margin-bottom: 5%;
 }
 
 #contact{
     background-color: rgba(255, 188, 110, 0.75);
     border-radius: 20px;
-    font-size: 20px;
+    font-size: 120%;
     width: 100%;
-    margin-top: 15px;
+    margin-top: 5%;
 }
 
 .links{
     margin: 0 5%;
-    font-size: 30px;
+    font-size: 150%;
     color:rgb(29, 29, 29);
     font-family: 'Catamaran', sans-serif;
     position: relative;
