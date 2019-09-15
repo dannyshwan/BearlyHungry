@@ -38,7 +38,7 @@ export default {
     position: relative;
 }
 
-img{
+#home_filter img{
     display: inline-block;
     margin-left: -5%;
     width: 20%;
