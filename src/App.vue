@@ -93,8 +93,8 @@ export default {
 	}
 
 	#brand{
-		font-size: 1.75vw;
-		margin:0 2.5%;
+		font-size: 175%;
+		margin:0 2.5vw;
 		position: relative;
 	}
 
@@ -117,9 +117,9 @@ export default {
 
 	.section-link{
 		opacity: 0.5;
-		margin: 0 50px;
+		margin: 0 2.5vw;
 		border: 0 10% solid;
-		font-size: 1.5vw;
+		font-size: 150%;
 		transition-duration: 0.3s;
 	}
 
