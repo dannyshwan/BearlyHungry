@@ -1,21 +1,26 @@
 import Vue from 'vue'
 import App from './App.vue'
-import VueAgile from 'vue-agile';
 import BootstrapVue from 'bootstrap-vue';
+import { Icon } from 'ant-design-vue';
+import VueTypedJs from 'vue-typed-js';
+import lottie from 'vue-lottie';
 
 import 'bootstrap';
 import 'bootstrap/dist/css/bootstrap.min.css';
 
 window.$ = window.jQuery = require('jquery');
+export const $ = window.$;
 
 Vue.config.productionTip = false;
-Vue.use(VueAgile);
 Vue.use(BootstrapVue);
+Vue.use(Icon);
+Vue.use(VueTypedJs);
+Vue.use(lottie);
 
 new Vue({
   el: '#app',
   components:{
-    agile: VueAgile,
+    "vue-typed-js": VueTypedJs,
   },
   render: h => h(App),
 }).$mount('#app')
