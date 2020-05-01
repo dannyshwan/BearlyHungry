@@ -6,8 +6,7 @@
                 <img src="../assets/img/brush-stroke.png" style="width: 50vw;">
                 <p id="hungry" style="color:#ffd591">HUNGRY</p>
             </div>
-            <!--
-            <vue-typed-js
+            <!--<vue-typed-js
                 id="typewriter"
                 :strings="[
                     'This is the first sentence', 
