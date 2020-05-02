@@ -9,8 +9,9 @@
             <vue-typed-js
                 id="typewriter"
                 :strings="[
-                    'This is the first sentence', 
-                    'I am the second sentence'
+                    'Welcome to the bear hub', 
+                    'Come join me to eat and hibernate',
+                    'Eat. Pray. Love'
                 ]"
                 :typeSpeed="50"
                 :loop="true"
