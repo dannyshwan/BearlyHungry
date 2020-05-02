@@ -73,94 +73,95 @@ export default {
 </script>
 
 <style>
-	@import url('https://fonts.googleapis.com/css?family=Montserrat:Light|Dancing+Script:Bold|Catamaran:Extra-bold|Bebas+Neue&display=swap');
-	html, body, #app{
-		font-family:'Montserrat', sans-serif;
-		background-color: whitesmoke;
-		height: 100%;
-	}
 
-	section{
-		font-family:'Montserrat', sans-serif;
-		background-color: whitesmoke;
-		height:100%;
-	}
+@import url('https://fonts.googleapis.com/css?family=Montserrat:Light|Dancing+Script:Bold|Bebas+Neue&display=swap');
 
+html, body, #app{
+	font-family:'Montserrat', sans-serif;
+	background-color: whitesmoke;
+	height: 100%;
+}
 
+section{
+	font-family:'Montserrat', sans-serif;
+	background-color: whitesmoke;
+	height:100%;
+}
+
+#navbar{
+	position:fixed;
+	font-family: 'Bebas Neue', sans-serif;
+	top: 0;
+	width: 100vw;
+	z-index: 1;
+	height: 100px;
+	transition: 300ms ease;
+}
+
+#navbar.scrolled{
+	height: 70px;
+	background: #08979c;
+}
+
+#brand{
+	font-size: 175%;
+	margin:0 2.5vw;
+	position: relative;
+}
+
+.section-link{
+	opacity: 0.5;
+	margin: 0 1vw;
+	border: 0 10% solid;
+	letter-spacing: 3px;
+	font-size: 150%;
+	transition-duration: 0.3s;
+}
+
+.section-link:hover{
+	opacity: 1;
+	transform: translateY(0%); 
+}
+
+.section-link::after {
+	content: "";
+	position: absolute;
+	left: 50%;
+	bottom: 0;
+	width: 0;
+	height: 0.2em;
+	opacity: 0;
+	background: rgb(250, 215, 73);
+	transition: all 400ms cubic-bezier(0.5, 1.6, 0.15, 0.9);
+}
+
+.section-link:hover::after {
+	left: 0;
+	width: 100%;
+	opacity: 1;
+}
+
+#footer{
+	text-align: center;
+	font-family: 'Montserrat', sans-serif;
+	color: whitesmoke;
+	background-color: #D32E5EFF;
+	height: 5rem;
+	display: flex;
+	align-items: center;
+	width: 100%;
+}
+
+#footer p{
+	margin: 0;
+	padding: 0;
+	width: 100%;
+}
+
+@media screen and (max-width: 800px) {
 	#navbar{
-		position:fixed;
-		font-family: 'Bebas Neue', sans-serif;
-		top: 0;
-		width: 100vw;
-		z-index: 1;
-		height: 100px;
-		transition: 300ms ease;
+		display: none;
 	}
-
-	#navbar.scrolled{
-		height: 70px;
-		background: #08979c;
-	}
-
-	#brand{
-		font-size: 175%;
-		margin:0 2.5vw;
-		position: relative;
-	}
-
-	.section-link{
-		opacity: 0.5;
-		margin: 0 1vw;
-		border: 0 10% solid;
-		letter-spacing: 3px;
-		font-size: 150%;
-		transition-duration: 0.3s;
-	}
-
-	.section-link:hover{
-		opacity: 1;
-		transform: translateY(0%); 
-	}
-
-	.section-link::after {
-		content: "";
-		position: absolute;
-		left: 50%;
-		bottom: 0;
-		width: 0;
-		height: 0.2em;
-		opacity: 0;
-		background: rgb(250, 215, 73);
-		transition: all 400ms cubic-bezier(0.5, 1.6, 0.15, 0.9);
-	}
-	
-	.section-link:hover::after {
-		left: 0;
-		width: 100%;
-		opacity: 1;
-	}
-
-	#footer{
-		text-align: center;
-		font-family: 'Montserrat', sans-serif;
-		color: whitesmoke;
-		background-color: #D32E5EFF;
-		height: 5rem;
-		display: flex;
-		align-items: center;
-		width: 100%;
-	}
-
-	#footer p{
-		margin: 0;
-		padding: 0;
-		width: 100%;
-	}
-
-	@media screen and (max-width: 800px) {
-		#navbar{
-			display: none;
-		}
-	}
+}
 
 </style>

@@ -1,8 +1,10 @@
 <template>
     <section id='about'>
-        <img id='sara' src='../assets/img/sara.jpg'>
+        <div id="image_of_sara">
+            <img id='sara' src='../assets/img/sara.jpg'>
+        </div>
         <div id='about_section'>
-            <img src="../assets/img/poohtsumtsum.png" style="width: 5rem;"/>
+            <img id="tsumtsum" src="../assets/img/poohtsumtsum.png" style="width: 5rem;"/>
             <div id='about_me'>
                 <p>Hey there, I'm Sara ✌️! I think cooking is really cool and I like bears (To be updated)</p>
             </div>
@@ -11,7 +13,7 @@
                     <a class="links" href="https://www.instagram.com/bearly_hungry/"><a-icon type="instagram" theme="outlined" /></a>
                     <a class="links" href="mailto:bearlyhungry@gmail.com"><a-icon type="mail" theme="outlined" /></a>
                 </div>
-                <!--<div id="brand-image"><img src="../assets/img/brand.png" alt="brand-image"></div>-->
+                <div id="brand-image"><img src="../assets/img/brand.png" alt="brand-image"></div>
             </div>
         </div>
     </section>
@@ -26,19 +28,18 @@
 
 <style>
 #about{
-    display: inline-flex;
+    display: flex;
     width: 100%;
-    height: 48rem;
+    min-height: 48rem;
     justify-content: center;
     align-items: center;
     text-align: center;
 }
 
 #sara{
-    height: auto;
-    width: 22.5%;
+    width: 22.5vw;
     margin-right: 5%;
-    box-shadow: 0.85vw 0.85vw 0 rgb(245, 201, 225);
+    box-shadow: 10px 10px 0 rgb(245, 201, 225);
     transition: 0.3s;
     border-radius: 5%;
 }
@@ -51,7 +52,6 @@
     font-family:'Montserrat', sans-serif;
     width: 40%;
     margin-left: 5%;
-    display: inline-block;
 
 }
 
@@ -60,7 +60,6 @@
     border-radius: 20px;
     font-size: 120%;
     margin: 5% auto;
-    
 }
 
 #contact{
@@ -77,7 +76,7 @@
 }
 
 #brand-image img{
-    height: 6rem;
+    width: 20rem;
 }
 
 .links{
@@ -101,6 +100,34 @@ p, h3{
     width: 90%;
 }
 
-@media screen and (max-width: 500px){
+@media screen and (max-width: 1024px){
+
+    #sara{
+        width: 35.5vw;
+    }
+}
+
+@media screen and (max-width: 750px){
+    #sara{
+        width: 55.5vw;
+        margin-top: 2rem;
+    }
+    #about{
+        display: block;
+        height: auto;
+    }
+    #about_section{
+        width: auto;
+        margin-left: 0;
+        padding: 2.5rem;
+    }
+    #tsumtsum{
+        display: none;
+    } 
+}
+@media screen and (max-width: 400px){
+    #brand-image img{
+        width: 15rem;
+    }
 }
 </style>

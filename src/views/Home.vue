@@ -186,6 +186,9 @@ export default {
         margin-top: -3rem;
         letter-spacing: 12.5px;
     }
+    #typewriter{
+        transform: translateY(25px);
+    }
 }
 
 @media screen and (max-width: 600px){

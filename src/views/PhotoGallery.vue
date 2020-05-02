@@ -6,7 +6,7 @@
         <div id="gallery">
             <div id="container">
                 <v-photoswipe-gallery id="images" :isOpen="isOpenGallery" :options="optionsGallery" :items="items">
-                    <img slot-scope="props" :src="props.item.src" alt="picture"/>
+                    <img slot-scope="props" :src="props.item.src" alt="pictures"/>
                 </v-photoswipe-gallery>
             </div>
         </div>
@@ -86,13 +86,14 @@ export default {
 #photoGallery{
     background-color: rgba(250, 215, 73, 0.397);
     min-height: 50rem;
+    height: auto;
 }
 
 #gallery{
     position: relative;
     display: flex;
     justify-content: center;
-    height: auto;
+    align-items: center;
 }
 
 #container{
@@ -103,9 +104,12 @@ export default {
     width: 75vw;
 }
 
+#images{
+    text-align: center;
+}
+
 #images img{
-    object-fit: cover;
-    margin: 1% 2%;
+    margin: 1rem 1rem;
     height: 15rem;
     border-radius: 5%;
     box-shadow: 0 0 5px black;
@@ -116,9 +120,9 @@ export default {
     box-shadow: 0 0 5px #08979c;
 }
 
-@media screen and (max-width: 1300px){
+@media screen and (max-width: 500px){
     #images img{
-        width: 20%;
+        height: 10rem;
     }
 }
 </style>
