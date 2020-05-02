@@ -6,12 +6,14 @@
 				<b-navbar-nav style="margin-left: -10%;">
 					<b-nav-item class='section-link' href="#about">About</b-nav-item>
 					<b-nav-item class='section-link' href="#photoGallery">Photos</b-nav-item>
+					<b-nav-item class='section-link' href="#sara-recommends">GW</b-nav-item>
 				</b-navbar-nav>
 			</b-nav-collapse>
 		</b-navbar>
 		<Home/>
 		<About/>
 		<PhotoGallery/>
+		<Recommendations/>
 		<div id='footer'>
 			<p>© 2020, Sara Cheng. All Rights Reserved.</p>
 		</div>
@@ -22,6 +24,7 @@
 import Home from './views/Home.vue';
 import About from './views/About.vue';
 import PhotoGallery from './views/PhotoGallery.vue';
+import Recommendations from './views/Recommendations.vue'
 import { $ } from './main';
 
 export default {
@@ -29,7 +32,8 @@ export default {
 	components: {
 		Home,
 		About,
-		PhotoGallery
+		PhotoGallery,
+		Recommendations
 	},
 	
 	mounted() {

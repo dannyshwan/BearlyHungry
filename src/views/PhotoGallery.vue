@@ -1,7 +1,7 @@
 <template>
     <section id="photoGallery">
         <div>
-            <lottie id="coffee-cup" :options="defaultOptions" :height="225" :width="225" />
+            <lottie :options="defaultOptions" :height="225" :width="225" />
         </div>
         <div id="gallery">
             <div id="container">
@@ -90,10 +90,10 @@ export default {
 }
 
 #gallery{
-    position: relative;
     display: flex;
     justify-content: center;
     align-items: center;
+    padding-bottom: 50px;
 }
 
 #container{

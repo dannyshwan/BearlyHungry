@@ -1,7 +1,7 @@
 import Vue from 'vue'
 import App from './App.vue'
 import BootstrapVue from 'bootstrap-vue';
-import { Icon } from 'ant-design-vue';
+import { Button, Icon } from 'ant-design-vue';
 import VueTypedJs from 'vue-typed-js';
 
 import 'bootstrap';
@@ -14,6 +14,7 @@ Vue.config.productionTip = false;
 Vue.use(BootstrapVue);
 Vue.use(Icon);
 Vue.use(VueTypedJs);
+Vue.use(Button);
 
 new Vue({
   el: '#app',
