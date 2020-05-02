@@ -11,7 +11,7 @@
                     <a class="links" href="https://www.instagram.com/bearly_hungry/"><a-icon type="instagram" theme="outlined" /></a>
                     <a class="links" href="mailto:bearlyhungry@gmail.com"><a-icon type="mail" theme="outlined" /></a>
                 </div>
-                <div id="brand-image"><img src="../assets/img/brand.png" alt="brand-image"></div>
+                <!--<div id="brand-image"><img src="../assets/img/brand.png" alt="brand-image"></div>-->
             </div>
         </div>
     </section>
@@ -102,8 +102,5 @@ p, h3{
 }
 
 @media screen and (max-width: 500px){
-    #sara{
-        width: 75%;
-    }
 }
 </style>

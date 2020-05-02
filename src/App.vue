@@ -157,7 +157,7 @@ export default {
 		width: 100%;
 	}
 
-	@media screen and (max-width: 1024px) {
+	@media screen and (max-width: 800px) {
 		#navbar{
 			display: none;
 		}

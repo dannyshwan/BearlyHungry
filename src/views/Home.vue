@@ -3,10 +3,10 @@
         <div class='home-title'>
             <div id="highlight">
                 <p id="bearly">Bearly</p>
-                <img src="../assets/img/brush-stroke.png" style="width: 50vw;">
+                <img src="../assets/img/brush-stroke.png">
                 <p id="hungry" style="color:#ffd591">HUNGRY</p>
             </div>
-            <!--<vue-typed-js
+            <vue-typed-js
                 id="typewriter"
                 :strings="[
                     'This is the first sentence', 
@@ -18,7 +18,7 @@
                 :backDelay="5000"
             >  
                 <span class="typing"></span>
-            </vue-typed-js>-->
+            </vue-typed-js>
         </div>
     </section>
 </template>
@@ -30,7 +30,7 @@ export default {
     mounted(){
         $(document).ready(function(){
             
-            $('#highlight').delay(500).fadeTo(500, 1);
+            $('#highlight').delay(500).fadeTo(100, 1);
             setTimeout( revealTitle, 800 );
             $('#typewriter').delay(2000).fadeTo(500, 1);
         });
@@ -85,6 +85,10 @@ export default {
     color: #ffe58f;
 }
 
+#highlight img{
+    width: 50vw;
+}
+
 #bearly{
     font-family: 'Dancing Script', sans-serif; 
     font-size: 11rem; 
@@ -106,11 +110,13 @@ export default {
 
 #typewriter{
     display: inline-block;
-    transform: translateY(75px);
+    transform: translateY(125px);
     letter-spacing: 5px;
     opacity: 0;
     width: 100%;
     font-size: 1.5rem;
+    color: rgb(26, 26, 26);
+    text-shadow: 0 0 5px whitesmoke;
 }
 
 /* Animation & media resizing */
@@ -123,11 +129,108 @@ export default {
     75% { opacity: 1; }
     100% { width: 50vw; }
 }
-@media screen and (max-width: 1024px){
+
+@media screen and (max-width: 1400px){
+
+    #bearly{
+        margin-bottom: -10.5rem;
+    }
 }
 
-@media screen and (max-width: 500px){
+@media screen and (max-width: 1024px){
+    #bearly{
+        margin-bottom: -11.5rem;
+    }
+    #hungry{
+        margin-top: -5rem;
+    }
+    #highlight{
+        left: 15vw;
+        animation: brushstroke_1024 0.5s cubic-bezier(0.5,0.62,0.36,0.99);
+        animation-delay: 0.3s;
+    }
+    #highlight img{
+        width: 70vw;
+    }
+
+    @keyframes brushstroke_1024{
+        0% { 
+            width: 0; 
+            opacity: 0;
+        }
+        75% { opacity: 1; }
+        100% { width: 70vw; }
+    }
+
+}
+@media screen and (max-width: 850px){
+    #bearly{
+        font-size: 9rem;
+        margin-bottom: -8.5rem;
+    }
+    #hungry{
+        font-size: 4rem;
+        margin-top: -4rem;
+    }
+}
+
+@media screen and (max-width: 750px){
+
+    #bearly{
+        font-size: 7rem;
+        margin-bottom: -7.5rem;
+    }
+    #hungry{
+        font-size: 3rem;
+        margin-top: -3rem;
+        letter-spacing: 12.5px;
+    }
+}
+
+@media screen and (max-width: 600px){
+
+    #bearly{
+        font-size: 6rem;
+        margin-bottom: -6rem;
+    }
+    #hungry{
+        font-size: 2.5rem;
+        margin-top: -2.5rem;
+        letter-spacing: 10px;
+    }
+
+    #highlight{
+        left: 5vw;
+        animation: brushstroke_500 0.5s cubic-bezier(0.5,0.62,0.36,0.99);
+        animation-delay: 0.3s;
+    }
     
+    #highlight img{
+        width: 90vw;
+    }
+
+    #typewriter{
+        font-size: 1rem;
+    }
+
+    @keyframes brushstroke_500{
+        0% { 
+            width: 0; 
+            opacity: 0;
+        }
+        75% { opacity: 1; }
+        100% { width: 90vw; }
+    }
+}
+
+@media screen and (max-width: 400px){
+    #bearly{
+        font-size: 5.5rem;
+        margin-bottom: -5.5rem;
+    }
+    #hungry{
+        font-size: 2rem;
+        margin-top: -2rem;
+    }
 }
 </style>
-
