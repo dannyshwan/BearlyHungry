@@ -1,4 +1,5 @@
 # Bearly Hungry
+[![Heroku](https://heroku-badge.herokuapp.com/?app=bearly-hungry&style=flat&svg=1)]
 
 ## Project setup
 ```bash
