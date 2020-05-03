@@ -8,35 +8,25 @@
         </div>
         <div id="gallery">
             <div id="container">
-                <v-photoswipe-gallery id="images" :isOpen="isOpenGallery" :options="optionsGallery" :items="items">
-                    <img slot-scope="props" :src="props.item.src" alt="pictures"/>
-                </v-photoswipe-gallery>
+                <img class="preview-img-item" v-for="(item, index) in items" v-bind:key="item.id" :src="item.src" @click="$photoswipe.open(index, items)">
             </div>
         </div>
     </section>
 </template>
 
 <script>
-import { PhotoSwipeGallery } from 'v-photoswipe';
 import lottie from 'vue-lottie';
 import * as animationData from '../assets/json/coffee.json';
 
 export default {
     name: 'photoGallery',
     components: {
-        'v-photoswipe-gallery': PhotoSwipeGallery,
         lottie
     },
     data () {
         return {
             defaultOptions: {animationData: animationData.default},
             animationSpeed: 1,
-            isOpen: false,
-            isOpenGallery: false,
-            options: {
-                index: 0
-            },
-            optionsGallery: {},
             items: [
                 {
                     src: require("../assets/img/gallery1.jpg"),
@@ -71,15 +61,6 @@ export default {
 
             ]
         }
-    },
-    methods: {
-        showPhotoSwipe (index) {
-        this.isOpen = true
-        this.$set(this.options, 'index', index)
-        },
-        hidePhotoSwipe () {
-        this.isOpen = false
-        },
     }
 }
 </script>
@@ -107,24 +88,19 @@ export default {
     width: 75vw;
 }
 
-#images{
-    text-align: center;
-}
-
-#images img{
+.preview-img-item{
     margin: 1rem 1rem;
     height: 15rem;
-    border-radius: 5%;
+    border-radius: 1%;
     box-shadow: 0 0 5px black;
-    transition: box-shadow 0.3s ease;
 }
 
-#images img:hover{
-    box-shadow: 0 0 5px #08979c;
+.preview-img-item:hover {
+    cursor: pointer;
 }
 
 @media screen and (max-width: 500px){
-    #images img{
+    .preview-img-item{
         height: 10rem;
     }
 }

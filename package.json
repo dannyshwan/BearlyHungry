@@ -16,9 +16,9 @@
     "bootstrap-vue": "^2.13.0",
     "express": "^4.17.1",
     "jquery": "^3.5.0",
-    "v-photoswipe": "^1.0.3-1",
     "vue": "^2.6.11",
     "vue-lottie": "^0.2.1",
+    "vue-simple-photoswipe": "^1.0.3",
     "vue-typed-js": "^0.1.2"
   },
   "devDependencies": {
