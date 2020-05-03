@@ -125,7 +125,7 @@ export default {
     width: 100%;
     font-size: 1.5rem;
     color: rgb(26, 26, 26);
-    text-shadow: 0 0 5px rgb(241, 241, 241);
+    text-shadow: 0 0 7.5px rgb(241, 241, 241);
 }
 
 /* Animation & media resizing */
@@ -191,7 +191,7 @@ export default {
     }
     #hungry{
         font-size: 3rem;
-        margin-top: -3rem;
+        margin-top: -2.75rem;
         letter-spacing: 12.5px;
     }
     #typewriter{
@@ -223,6 +223,7 @@ export default {
 
     #typewriter{
         font-size: 1rem;
+        transform: translateY(9rem);
     }
 
     @keyframes brushstroke_500{
@@ -242,7 +243,7 @@ export default {
     }
     #hungry{
         font-size: 2rem;
-        margin-top: -1.5rem;
+        margin-top: -1.75rem;
     }
 }
 </style>
