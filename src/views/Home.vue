@@ -95,7 +95,7 @@ export default {
 
 #bearly{
     font-family: 'aaleyah', sans-serif; 
-    font-size: 11rem; 
+    font-size: 10rem; 
     opacity: 0;
     margin-bottom: -12.5rem;
     color: #ffdc68;
@@ -109,7 +109,7 @@ export default {
     font-family: 'Bebas Neue', sans-serif; 
     font-size: 5rem; 
     opacity: 0; 
-    margin-top: -6rem;
+    margin-top: -5.5rem;
     letter-spacing: 10px;
     color:#ffd591;
 }
@@ -141,14 +141,14 @@ export default {
     #bearly{
         margin-bottom: -10.5rem;
     }
+    #hungry{
+        margin-top: -4.5rem;
+    }
 }
 
 @media screen and (max-width: 1024px){
     #bearly{
         margin-bottom: -11.5rem;
-    }
-    #hungry{
-        margin-top: -5rem;
     }
     #highlight{
         left: 15vw;
