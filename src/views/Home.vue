@@ -76,7 +76,6 @@ export default {
     position: relative;
     height: auto;
     margin: 0 auto;
-    overflow: hidden;
     float: left;
     left: 25vw;
     opacity: 0;

@@ -1,6 +1,6 @@
 <template>
     <section id='about'>
-        <div id="image_of_sara">
+        <div>
             <img id='sara' src='../assets/img/sara.jpg'>
         </div>
         <div id='about_section'>
