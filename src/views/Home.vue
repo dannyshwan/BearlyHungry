@@ -75,6 +75,7 @@ export default {
 #highlight {
     position: relative;
     height: auto;
+    overflow: hidden;
     margin: 0 auto;
     float: left;
     left: 25vw;
