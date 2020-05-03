@@ -76,6 +76,8 @@ export default {
     position: relative;
     height: auto;
     overflow: hidden;
+    display: flexbox;
+    align-content: center;
     margin: 0 auto;
     float: left;
     left: 25vw;
@@ -96,6 +98,7 @@ export default {
 #bearly{
     font-family: 'aaleyah', sans-serif; 
     font-size: 10rem; 
+    margin-top: 20px;
     opacity: 0;
     margin-bottom: -12.5rem;
     color: #ffdc68;
@@ -239,7 +242,7 @@ export default {
     }
     #hungry{
         font-size: 2rem;
-        margin-top: -2rem;
+        margin-top: -1.5rem;
     }
 }
 </style>
