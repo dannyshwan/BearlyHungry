@@ -4,7 +4,7 @@
             <div id="highlight">
                 <p id="bearly">Bearly</p>
                 <img src="../assets/img/brush-stroke.png">
-                <p id="hungry" style="color:#ffd591">HUNGRY</p>
+                <p id="hungry">Hungry</p>
             </div>
             <vue-typed-js
                 id="typewriter"
@@ -51,6 +51,11 @@ export default {
 
 <style>
 
+@font-face {
+  font-family: "aaleyah";
+  src: url('../assets/fonts/aaleyah.normal.otf');
+}
+
 /* Components */
 #home{
     background: url(../assets/img/homebackground.jpg) no-repeat center center;
@@ -81,8 +86,7 @@ export default {
 
 #highlight p{
     padding: 0;
-    text-shadow: 0 0 5px black;
-    color: #ffe58f;
+    text-shadow: 0 0 2.5px black;
 }
 
 #highlight img{
@@ -90,10 +94,11 @@ export default {
 }
 
 #bearly{
-    font-family: 'Dancing Script', sans-serif; 
+    font-family: 'aaleyah', sans-serif; 
     font-size: 11rem; 
     opacity: 0;
     margin-bottom: -12.5rem;
+    color: #ffdc68;
     -webkit-transform: translateY(50px);
     -ms-transform: translateY(50px);
     transform: translateY(50px);
@@ -105,7 +110,8 @@ export default {
     font-size: 5rem; 
     opacity: 0; 
     margin-top: -6rem;
-    letter-spacing: 15px;
+    letter-spacing: 10px;
+    color:#ffd591;
 }
 
 #typewriter{
@@ -116,7 +122,7 @@ export default {
     width: 100%;
     font-size: 1.5rem;
     color: rgb(26, 26, 26);
-    text-shadow: 0 0 5px whitesmoke;
+    text-shadow: 0 0 5px rgb(241, 241, 241);
 }
 
 /* Animation & media resizing */

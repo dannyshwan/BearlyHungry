@@ -78,11 +78,10 @@ export default {
 
 <style>
 
-@import url('https://fonts.googleapis.com/css?family=Montserrat:Light|Dancing+Script:Bold|Bebas+Neue&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Montserrat:Light|Bebas+Neue&display=swap');
 
 html, body, #app{
 	font-family:'Montserrat', sans-serif;
-	background-color: whitesmoke;
 	height: 100%;
 }
 
@@ -104,7 +103,7 @@ section{
 
 #navbar.scrolled{
 	height: 70px;
-	background: #08979c;
+	background: #55b4b8;
 }
 
 #brand{
@@ -149,7 +148,7 @@ section{
 	text-align: center;
 	font-family: 'Montserrat', sans-serif;
 	color: whitesmoke;
-	background-color: rgb(247, 53, 108);
+	background-color: rgb(240, 98, 138);
 	height: 5rem;
 	display: flex;
 	align-items: center;

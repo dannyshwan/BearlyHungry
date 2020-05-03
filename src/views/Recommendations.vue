@@ -33,7 +33,6 @@ export default {
 
 <style>
 #sara-recommends{
-   background-color: rgb(145, 248, 241);
    height: auto;
 }
 
