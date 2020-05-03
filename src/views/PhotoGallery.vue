@@ -1,7 +1,10 @@
 <template>
     <section id="photoGallery">
         <div>
-            <lottie :options="defaultOptions" :height="225" :width="225" />
+            <lottie :options="defaultOptions" :height="200" :width="200" />
+        </div>
+        <div class="sections" style="margin: -50px 0 0">
+            <h1>Photo Gallery</h1>
         </div>
         <div id="gallery">
             <div id="container">

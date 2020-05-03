@@ -3,15 +3,13 @@
       <div>
          <lottie id="pin" :options="defaultOptions" :height="350" :width="350" />
       </div>
-      <div id="guess_where" class="recomendations_sections">
-         <h1>Guess where? Anywhere!</h1>
+      <div class="sections" style="margin: -100px 0 50px;">
+         <h1 id="guess_where">Guess where? Anywhere!</h1>
       </div>
-      <div class="recomendations_sections">
-         <a target="_blank" href="https://bit.ly/2ylcMV4">
-            <a-button id="button" type="primary">
-               Check out what I recommend!
-            </a-button>
-         </a>
+      <div class="sections" style="padding-bottom: 75px;">
+         <b-button id="google_maps_button" class="sections" variant="outline-dark" target="_blank" href="https://bit.ly/2ylcMV4">
+            <h3><span id="web">Click</span><span id="mobile">Tap</span> here to see places I recommend!</h3>
+         </b-button>
       </div>
    </section>
 </template>
@@ -36,23 +34,37 @@ export default {
 <style>
 #sara-recommends{
    background-color: rgb(145, 248, 241);
-   min-height: 48rem;
    height: auto;
 }
 
-.recomendations_sections{
+.sections{
    display: flex;
    justify-content: center;
    align-items: center;
-}
-
-#guess_where{
    font-family: 'Bebas Neue', sans-serif;
-   margin: -100px 0 50px;
+   letter-spacing: 2.5px;
 }
 
-#button{
-   width: 25rem;
-   height: 10rem;
+#google_maps_button{
+   padding-bottom: 0;
+}
+
+#mobile{
+   display:none;
+}
+
+@media screen and (max-width: 1024px){
+   #guess_where{
+      font-size: 2rem;
+   }
+   #google_maps_button{
+      width: 20rem;
+   }
+   #mobile{
+      display:inline;
+   }
+   #web{
+      display:none;
+   }
 }
 </style>

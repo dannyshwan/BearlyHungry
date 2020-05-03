@@ -87,10 +87,10 @@ html, body, #app{
 }
 
 section{
-	font-family:'Montserrat', sans-serif;
 	background-color: whitesmoke;
 	height:100%;
 }
+
 
 #navbar{
 	position:fixed;
@@ -149,7 +149,7 @@ section{
 	text-align: center;
 	font-family: 'Montserrat', sans-serif;
 	color: whitesmoke;
-	background-color: #D32E5EFF;
+	background-color: rgb(247, 53, 108);
 	height: 5rem;
 	display: flex;
 	align-items: center;
