@@ -11,6 +11,7 @@
             <div id='contact'> 
                 <div style="padding: 5% 0">
                     <a class="links" href="https://www.instagram.com/bearly_hungry/"><a-icon type="instagram" theme="outlined" /></a>
+                    <a class="links"><a-icon type="camera" theme="outlined" /></a>
                     <a class="links" href="mailto:bearlyhungry@gmail.com"><a-icon type="mail" theme="outlined" /></a>
                 </div>
                 <div id="brand-image"><img src="../assets/img/brand.png" alt="brand-image"></div>
@@ -79,7 +80,7 @@ export default {
 }
 
 .links{
-    margin: 0 10%;
+    margin: 0 7.5%;
     font-size: 5rem;
     display: inline-block;
     color: #006d75;

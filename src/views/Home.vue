@@ -223,7 +223,7 @@ export default {
 
     #typewriter{
         font-size: 1rem;
-        transform: translateY(9rem);
+        transform: translateY(7rem);
     }
 
     @keyframes brushstroke_500{
@@ -239,7 +239,7 @@ export default {
 @media screen and (max-width: 400px){
     #bearly{
         font-size: 5.5rem;
-        margin-bottom: -5.5rem;
+        margin-bottom: -5.75rem;
     }
     #hungry{
         font-size: 2rem;
