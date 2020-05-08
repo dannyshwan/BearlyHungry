@@ -7,8 +7,8 @@
          <h1 id="guess_where">Guess where? Anywhere!</h1>
       </div>
       <div class="sections" style="padding-bottom: 75px;">
-         <b-button id="google_maps_button" class="sections" variant="outline-dark" target="_blank" href="https://bit.ly/2z84dwF">
-            <h3><span id="web">Click</span><span id="mobile">Tap</span> here to see places I recommend!</h3>
+         <b-button disabled id="google_maps_button" class="sections" variant="outline-dark" target="_blank" href="https://bit.ly/2z84dwF">
+            <h3><span id="web">Click</span><span id="mobile">Tap</span> here to see places I recommend! (Coming soon)</h3>
          </b-button>
       </div>
    </section>

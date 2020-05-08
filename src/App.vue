@@ -57,7 +57,7 @@ export default {
 					let scrollSetting = $(hash).offset().top;
 
 					if(href != "#home"){ 
-						scrollSetting -= 70;
+						scrollSetting -= 85;
 					}
 							
 					$('html, body').animate({
@@ -78,7 +78,7 @@ export default {
 
 <style>
 
-@import url('https://fonts.googleapis.com/css?family=Montserrat:Light|Bebas+Neue&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Montserrat|Bebas+Neue&display=swap');
 
 html, body, #app{
 	font-family:'Montserrat', sans-serif;
@@ -97,12 +97,12 @@ section{
 	top: 0;
 	width: 100vw;
 	z-index: 1;
-	height: 100px;
+	height: 15vh;
 	transition: 300ms ease;
 }
 
 #navbar.scrolled{
-	height: 70px;
+	height: 10vh;
 	background: #55b4b8;
 }
 

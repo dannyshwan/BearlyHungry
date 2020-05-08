@@ -81,7 +81,6 @@ export default {
     margin: 0 auto;
     float: left;
     left: 25vw;
-    opacity: 0;
     animation: brushstroke 0.5s cubic-bezier(0.5,0.62,0.36,0.99);
     animation-delay: 0.3s;
 }

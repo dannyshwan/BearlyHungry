@@ -69,7 +69,7 @@ export default {
 
 #photoGallery{
     background-color: rgba(250, 215, 73, 0.397);
-    min-height: 50rem;
+    min-height: 90vh;
     height: auto;
 }
 

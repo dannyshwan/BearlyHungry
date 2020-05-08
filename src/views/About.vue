@@ -6,12 +6,16 @@
         <div id='about_section'>
             <img id="tsumtsum" src="../assets/img/poohtsumtsum.png" style="width: 5rem;"/>
             <div id='about_me'>
-                <p>Hey there, I'm Sara ✌️! I think cooking is really cool and I like bears (To be updated)</p>
+                <p>
+                    Hello! My name is Sara, and I am a food and media blogger on @bearly_hungry. 
+                    I love to eat (of course), cook, and find hidden gems locally and around the world! 
+                    I enjoy trying different foods, and I am always down to have cup of cafe with you! 
+                    Please connect with me, and join me on the beary fun adventure!
+                </p>
             </div>
             <div id='contact'> 
                 <div style="padding: 5% 0">
                     <a class="links" href="https://www.instagram.com/bearly_hungry/"><a-icon type="instagram" theme="outlined" /></a>
-                    <a class="links"><a-icon type="camera" theme="outlined" /></a>
                     <a class="links" href="mailto:bearlyhungry@gmail.com"><a-icon type="mail" theme="outlined" /></a>
                 </div>
                 <div id="brand-image"><img src="../assets/img/brand.png" alt="brand-image"></div>
@@ -29,8 +33,8 @@ export default {
 <style>
 #about{
     display: flex;
-    width: 100%;
-    min-height: 48rem;
+    min-height: 90vh;
+    height: auto;
     justify-content: center;
     align-items: center;
     text-align: center;
@@ -111,10 +115,10 @@ p, h3{
     #sara{
         width: 55.5vw;
         margin-top: 2rem;
+        margin-right: 0;
     }
     #about{
-        display: block;
-        height: auto;
+        flex-direction: column;
     }
     #about_section{
         width: auto;
