@@ -78,7 +78,7 @@ export default {
 
 <style>
 
-@import url('https://fonts.googleapis.com/css?family=Montserrat|Bebas+Neue&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Montserrat:L|Bebas+Neue&display=swap');
 
 html, body, #app{
 	font-family:'Montserrat', sans-serif;
@@ -130,7 +130,7 @@ section{
 	content: "";
 	position: absolute;
 	left: 50%;
-	bottom: 0;
+	bottom: 10px;
 	width: 0;
 	height: 0.2em;
 	opacity: 0;

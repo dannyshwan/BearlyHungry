@@ -78,6 +78,7 @@ export default {
     overflow: hidden;
     display: flexbox;
     align-content: center;
+    opacity: 0;
     margin: 0 auto;
     float: left;
     left: 25vw;

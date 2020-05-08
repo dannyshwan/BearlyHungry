@@ -29,32 +29,32 @@ export default {
             animationSpeed: 1,
             items: [
                 {
-                    src: require("../assets/img/gallery1.jpg"),
+                    src: require("../assets/img/gallery/gallery1.jpg"),
                     w: 700,
                     h: 1066,
                 },
                 {
-                    src: require("../assets/img/gallery2.jpg"),
+                    src: require("../assets/img/gallery/gallery2.jpg"),
                     w: 1600,
                     h: 1066,
                 },
                 {
-                    src: require("../assets/img/gallery3.jpg"),
+                    src: require("../assets/img/gallery/gallery3.jpg"),
                     w: 1600,
                     h: 1066,
                 },
                 {
-                    src: require("../assets/img/gallery4.jpg"),
+                    src: require("../assets/img/gallery/gallery4.jpg"),
                     w: 1600,
                     h: 1066,
                 },
                 {
-                    src: require("../assets/img/gallery5.jpg"),
+                    src: require("../assets/img/gallery/gallery5.jpg"),
                     w: 1600,
                     h: 1066,
                 },
                 {
-                    src: require("../assets/img/gallery6.jpg"),
+                    src: require("../assets/img/gallery/gallery6.jpg"),
                     w: 700,
                     h: 1066,
                 },

@@ -9,8 +9,8 @@
                 <p>
                     Hello! My name is Sara, and I am a food and media blogger on @bearly_hungry. 
                     I love to eat (of course), cook, and find hidden gems locally and around the world! 
-                    I enjoy trying different foods, and I am always down to have cup of cafe with you! 
-                    Please connect with me, and join me on the beary fun adventure!
+                    I enjoy trying varieties of different foods, and I'm always down to have cup of cafe with you! 
+                    Come connect with me, and join me on the beary fun adventure!
                 </p>
             </div>
             <div id='contact'> 
@@ -108,6 +108,9 @@ p, h3{
 
     #sara{
         width: 35.5vw;
+    }
+    #brand-image img{
+        width: 17.5rem;
     }
 }
 
