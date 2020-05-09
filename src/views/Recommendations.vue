@@ -8,7 +8,7 @@
       </div>
       <div class="sections" style="padding-bottom: 75px;">
          <b-button disabled id="google_maps_button" class="sections" variant="outline-dark" target="_blank" href="https://bit.ly/2z84dwF">
-            <h3><span id="web">Click</span><span id="mobile">Tap</span> here to see places I recommend! (Coming soon)</h3>
+            <h3><span id="web">Click</span><span id="mobile">Tap</span> here to see places I recommend! <br>(Coming soon)</h3>
          </b-button>
       </div>
    </section>
