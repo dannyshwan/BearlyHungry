@@ -1,249 +1,170 @@
 <template>
-    <section id='home'>
-        <div class='home-title'>
-            <div id="highlight">
-                <p id="bearly">Bearly</p>
-                <img src="../assets/img/brush-stroke.png">
-                <p id="hungry">Hungry</p>
-            </div>
-            <vue-typed-js
-                id="typewriter"
-                :strings="[
-                    'Welcome to the bear hub', 
-                    'Come join me to eat and hibernate',
-                    'Eat. Pray. Love'
-                ]"
-                :typeSpeed="50"
-                :loop="true"
-                :backSpeed="50"
-                :backDelay="5000"
-            >  
-                <span class="typing"></span>
-            </vue-typed-js>
-        </div>
-    </section>
+	<div id="home">
+		<b-navbar id='navbar' class='navbar navbar-default navbar-custom' variant="faded" type='dark'>
+			<b-navbar-brand id='brand' class="section-link" href="#home">Bearly Hungry</b-navbar-brand>
+			<b-nav-collapse class='ml-auto'>
+				<b-navbar-nav style="margin-left: -10%;">
+					<b-nav-item class='section-link' href="#about">About</b-nav-item>
+					<b-nav-item class='section-link' href="#photoGallery">Photos</b-nav-item>
+					<b-nav-item class='section-link' href="#sara-recommends">GW</b-nav-item>
+				</b-navbar-nav>
+			</b-nav-collapse>
+		</b-navbar>
+		<Title/>
+		<About/>
+		<PhotoGallery/>
+		<Recommendations/>
+		<div id='footer'>
+			<p>© 2020, Sara Cheng. All Rights Reserved.</p>
+		</div>
+	</div>
 </template>
 
 <script>
+import Title from './Title.vue';
+import About from './About';
+import PhotoGallery from './PhotoGallery.vue';
+import Recommendations from './Recommendations.vue'
 import { $ } from '../main';
-export default {
-    name: 'home',
-    mounted(){
-        $(document).ready(function(){
-            
-            $('#highlight').delay(500).fadeTo(100, 1);
-            setTimeout( revealTitle, 800 );
-            $('#typewriter').delay(2000).fadeTo(500, 1);
-        });
-        function revealTitle(){
-            $('#bearly').css({
-                "-webkit-transform":"translateY(0)",
-                "-ms-transform":"translateY(0)",
-                transform: "translateY(0)",
-                opacity: "1"
-            });
-            $('#hungry').delay(400).fadeTo(500, 1);
-        }
 
-    }
+export default {
+	name: 'home',
+	components: {
+		Title,
+		About,
+		PhotoGallery,
+		Recommendations
+	},
+	
+	mounted() {
+
+		$.extend( $.easing, 
+		{
+			easeInOutQuint: function (x, t, b, c, d) {
+				if ((t/=d/2) < 1) return c/2*t*t*t*t*t + b;
+				return c/2*((t-=2)*t*t*t*t + 2) + b;
+			}
+		});
+
+		$(document).ready(function(){
+			$("a").on('click', function(event){
+				var href = $(this).attr('href');
+				if(href == '#home'|| href == '#about'|| href == '#photoGallery'| href == "#sara-recommends"){
+			
+					event.preventDefault();
+					let hash = this.hash;
+
+					let scrollSetting = $(hash).offset().top;
+
+					if(href != "#home"){ 
+						scrollSetting -= 85;
+					}
+							
+					$('html, body').animate({
+						scrollTop: scrollSetting
+					}, 1000, "easeInOutQuint");
+				}
+			});
+		});
+		
+		$(document).scroll(function () {
+			let $nav = $(".navbar-custom");
+			$nav.toggleClass('scrolled', $(this).scrollTop() > $nav.height());
+		});
+	},
 }
+
 </script>
 
-<style>
+<style scoped>
 
-@font-face {
-  font-family: "aaleyah";
-  src: url('../assets/fonts/aaleyah.normal.otf');
+@import url('https://fonts.googleapis.com/css?family=Montserrat:L|Bebas+Neue&display=swap');
+
+html, body, #home{
+	font-family:'Montserrat', sans-serif;
+	height: 100%;
 }
 
-/* Components */
-#home{
-    background: url(../assets/img/homebackground.jpg) no-repeat center center;
-    background-size: cover;
-    color: whitesmoke;
-    width: 100%;
-    display: table;
+section{
+	background-color: whitesmoke;
+	height:100%;
 }
 
 
-.home-title{
-    display: table-cell;
-    vertical-align: middle;
-    text-align: center;
+#navbar{
+	position:fixed;
+	font-family: 'Bebas Neue', sans-serif;
+	top: 0;
+	width: 100vw;
+	z-index: 1;
+	height: 15vh;
+	transition: 300ms ease;
 }
 
-#highlight {
-    position: relative;
-    height: auto;
-    overflow: hidden;
-    display: flexbox;
-    align-content: center;
-    opacity: 0;
-    margin: 0 auto;
-    float: left;
-    left: 25vw;
-    animation: brushstroke 0.5s cubic-bezier(0.5,0.62,0.36,0.99);
-    animation-delay: 0.3s;
+#navbar.scrolled{
+	height: 10vh;
+	background: #55b4b8;
 }
 
-#highlight p{
-    padding: 0;
-    text-shadow: 0 0 2.5px black;
+#brand{
+	font-size: 175%;
+	margin:0 2.5vw;
+	position: relative;
 }
 
-#highlight img{
-    width: 50vw;
+.section-link{
+	opacity: 0.5;
+	margin: 0 1vw;
+	border: 0 10% solid;
+	letter-spacing: 3px;
+	font-size: 150%;
+	transition-duration: 0.3s;
 }
 
-#bearly{
-    font-family: 'aaleyah', sans-serif; 
-    font-size: 10rem; 
-    margin-top: 20px;
-    opacity: 0;
-    margin-bottom: -12.5rem;
-    color: #ffdc68;
-    -webkit-transform: translateY(50px);
-    -ms-transform: translateY(50px);
-    transform: translateY(50px);
-    transition: transform 0.4s ease-out, opacity 0.4s ease-in-out;
+.section-link:hover{
+	opacity: 1;
+	transform: translateY(0%); 
 }
 
-#hungry{
-    font-family: 'Bebas Neue', sans-serif; 
-    font-size: 5rem; 
-    opacity: 0; 
-    margin-top: -5.5rem;
-    letter-spacing: 10px;
-    color:#ffd591;
+.section-link::after {
+	content: "";
+	position: absolute;
+	left: 50%;
+	bottom: 10px;
+	width: 0;
+	height: 0.2em;
+	opacity: 0;
+	background: rgb(250, 215, 73);
+	transition: all 400ms cubic-bezier(0.5, 1.6, 0.15, 0.9);
 }
 
-#typewriter{
-    display: inline-block;
-    transform: translateY(125px);
-    letter-spacing: 5px;
-    opacity: 0;
-    width: 100%;
-    font-size: 1.5rem;
-    color: rgb(26, 26, 26);
-    text-shadow: 0 0 7.5px rgb(241, 241, 241);
+.section-link:hover::after {
+	left: 0;
+	width: 100%;
+	opacity: 1;
 }
 
-/* Animation & media resizing */
-
-@keyframes brushstroke {
-    0% { 
-        width: 0; 
-        opacity: 0;
-    }
-    75% { opacity: 1; }
-    100% { width: 50vw; }
+#footer{
+	text-align: center;
+	font-family: 'Montserrat', sans-serif;
+	color: whitesmoke;
+	background-color: rgb(240, 98, 138);
+	height: 5rem;
+	display: flex;
+	align-items: center;
+	width: 100%;
 }
 
-@media screen and (max-width: 1400px){
-
-    #bearly{
-        margin-bottom: -10.5rem;
-    }
-    #hungry{
-        margin-top: -4.5rem;
-    }
+#footer p{
+	margin: 0;
+	padding: 0;
+	width: 100%;
 }
 
-@media screen and (max-width: 1024px){
-    #bearly{
-        margin-bottom: -11.5rem;
-    }
-    #highlight{
-        left: 15vw;
-        animation: brushstroke_1024 0.5s cubic-bezier(0.5,0.62,0.36,0.99);
-        animation-delay: 0.3s;
-    }
-    #highlight img{
-        width: 70vw;
-    }
-
-    @keyframes brushstroke_1024{
-        0% { 
-            width: 0; 
-            opacity: 0;
-        }
-        75% { opacity: 1; }
-        100% { width: 70vw; }
-    }
-
-}
-@media screen and (max-width: 850px){
-    #bearly{
-        font-size: 9rem;
-        margin-bottom: -8.5rem;
-    }
-    #hungry{
-        font-size: 4rem;
-        margin-top: -4rem;
-    }
+@media screen and (max-width: 800px) {
+	#navbar{
+		display: none;
+	}
 }
 
-@media screen and (max-width: 750px){
-
-    #bearly{
-        font-size: 7rem;
-        margin-bottom: -7.5rem;
-    }
-    #hungry{
-        font-size: 3rem;
-        margin-top: -2.75rem;
-        letter-spacing: 12.5px;
-    }
-    #typewriter{
-        transform: translateY(25px);
-    }
-}
-
-@media screen and (max-width: 600px){
-
-    #bearly{
-        font-size: 6rem;
-        margin-bottom: -6rem;
-    }
-    #hungry{
-        font-size: 2.5rem;
-        margin-top: -2.5rem;
-        letter-spacing: 10px;
-    }
-
-    #highlight{
-        left: 5vw;
-        animation: brushstroke_500 0.5s cubic-bezier(0.5,0.62,0.36,0.99);
-        animation-delay: 0.3s;
-    }
-    
-    #highlight img{
-        width: 90vw;
-    }
-
-    #typewriter{
-        font-size: 1rem;
-        transform: translateY(7rem);
-    }
-
-    @keyframes brushstroke_500{
-        0% { 
-            width: 0; 
-            opacity: 0;
-        }
-        75% { opacity: 1; }
-        100% { width: 90vw; }
-    }
-}
-
-@media screen and (max-width: 400px){
-    #bearly{
-        font-size: 5.5rem;
-        margin-bottom: -5.75rem;
-    }
-    #hungry{
-        font-size: 2rem;
-        margin-top: -1.75rem;
-    }
-}
 </style>

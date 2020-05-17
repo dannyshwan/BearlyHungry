@@ -65,7 +65,7 @@ export default {
 }
 </script>
 
-<style>
+<style scoped>
 
 #photoGallery{
     background-color: rgba(250, 215, 73, 0.397);
