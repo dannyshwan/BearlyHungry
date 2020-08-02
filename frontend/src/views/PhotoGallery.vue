@@ -42,7 +42,7 @@ export default {
       return {
          defaultOptions: {animationData: animationData.default},
          animationSpeed: 1,
-         feature: null,
+         feature: "https://www.instagram.com/p/CCmfyOHFMun/",
          items: [
             {
                 src: require("../assets/img/gallery/gallery1.jpg"),

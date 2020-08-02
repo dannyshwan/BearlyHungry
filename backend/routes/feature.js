@@ -5,7 +5,7 @@ const router = express.Router();
 
 async function loadFeatureCollection(){
    const connection = await mongodb.MongoClient.connect(
-      process.env.MONGODB_FEATURE_URI, { useNewUrlParser: true, useUnifiedTopology: true }
+      process.env.MONGODB_URI, { useNewUrlParser: true, useUnifiedTopology: true }
    )
    
    return connection.db(process.env.MONGODB_DATABASE).collection('Insta_Feature');
